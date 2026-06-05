@@ -388,3 +388,34 @@ hr {
 #papers {
   padding-left: 10px;
 }
+
+#contact {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1rem; /* Adjust size as needed */
+  padding-left: 13px;
+  float: left;
+  clear: both;
+}
+
+/* --- Paper Meta & Bubbles --- */
+.paper-meta {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  margin-top: 4px;
+}
+
+.conference-bubble {
+  background-color: #e5e5e5; /* Pulls from your existing horizontal rule color */
+  color: #444; /* Pulls from your standard body text */
+  padding: 2px 10px; 
+  border-radius: 12px; 
+  font-size: 13px; /* Matches your existing .paper-links size */
+  font-weight: 500;
+}
+
+/* Alternate outline style for preprints to differentiate them */
+.conference-bubble.preprint {
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+}
