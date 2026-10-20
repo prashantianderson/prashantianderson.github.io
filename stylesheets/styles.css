@@ -85,10 +85,16 @@ li {
 }
 
 h1 {
-  font-size: 24px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 20px;
   font-weight: 400;
   text-transform: none;
   letter-spacing: 0.03em;
+}
+
+h1 a {
+  color: inherit;
+  font-weight: inherit;
 }
 
 h2,
@@ -472,27 +478,19 @@ hr {
 }
 
 .updates-list li {
-  margin-bottom: var(--spacing-sm);
   line-height: 1.5;
   display: grid;
-  grid-template-columns: var(--updates-date-column) minmax(0, var(--text-measure));
+  grid-template-columns: var(--updates-date-column) minmax(0, 1fr);
   column-gap: var(--updates-column-gap);
   align-items: start;
-  font-size: var(--font-size-base);
-  color: var(--muted);
 }
 
 .teaching-load {
   display: inline-block;
   margin-left: 0.35em;
-  color: var(--muted-faint);
   font-size: 0.84em;
   line-height: 1;
   white-space: nowrap;
-}
-
-.updates-list li.update-highlighted {
-  color: var(--fg);
 }
 
 .updates-list li.update-highlighted .update-date {
@@ -521,7 +519,6 @@ hr {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  font-weight: var(--font-weight-medium);
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -540,7 +537,6 @@ hr {
 
 /* News expand/collapse */
 .news-actions {
-  margin-top: var(--spacing-md);
   display: flex;
   justify-content: center;
 }
@@ -560,7 +556,10 @@ hr {
   font-size: 13px;
   line-height: 1;
   cursor: pointer;
-  transition: color var(--transition), opacity var(--transition), transform var(--transition);
+}
+
+.news-toggle[hidden] {
+  display: none;
 }
 
 .news-toggle:hover {
@@ -570,6 +569,45 @@ hr {
 .news-toggle-icon {
   font-size: inherit;
   line-height: 1;
+}
+
+/* Teaching */
+.teaching-content {
+  padding: 5px 10px;
+}
+
+.teaching-list {
+  list-style: none;
+  padding: 0;
+}
+
+.teaching-list li {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 4px 16px;
+  align-items: start;
+  margin: 0 0 16px;
+}
+
+.teaching-date {
+  color: rgba(10, 10, 10, 0.58);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 13px;
+  font-weight: inherit;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.teaching-title {
+  font-weight: 400;
+}
+
+.teaching-separator {
+  font-size: 22px;
+  line-height: 0;
+  vertical-align: middle;
 }
 
 /* Media queries */
@@ -614,6 +652,14 @@ hr {
   .updates-list li {
     grid-template-columns: 56px minmax(0, 1fr);
     column-gap: 12px;
+  }
+
+  .teaching-list li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .teaching-date {
+    white-space: normal;
   }
 
   .paper-meta {

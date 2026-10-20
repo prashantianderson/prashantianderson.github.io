@@ -29,11 +29,11 @@
   <script src="news.js"></script>
 </head>
 
-<body>
+<body id="top">
   <!-- header -->
   <section class="site-header">
     <div id="title">
-      <h1>Prashanti Anderson</h1>
+      <h1><a href="#top">Prashanti Ann Anderson</a></h1>
     </div>
     <nav id="nav" aria-label="Main navigation">
       <a href="#news">news</a>
@@ -62,7 +62,7 @@
               <a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>.  
             </p>
             <p>
-              If you'd like to chat you can reach me at <strong>paanders[at]mit[dot]edu</strong>.
+              If you'd like to chat you can reach me at <strong>paanders@mit.edu</strong>.
             </p>
             <div class="socials">
               <div>
@@ -84,8 +84,8 @@
                     class="fa fa-brands fa-linkedin" aria-label="LinkedIn"></i>
                 </a>
                 <span aria-hidden="true">&middot;</span>
-                <a class="icon" href="docs/cv.pdf">
-                    <i class="fa fa-solid fa-file" aria-label="CV"></i>
+                <a class="icon" href="mailto:paanders@mit.edu" aria-label="Email Prashanti Anderson">
+                  <i class="fa fa-solid fa-envelope" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -110,7 +110,7 @@
             <time class="update-date" datetime="2026-06" aria-label="06/2026">
                   06.26
             </time>
-              <div class="update-body">My masters thesis "A Geometry-Aware Exponential Mechanism for Private Estimation" won the William A. Martin Thesis Award.</div>
+              <div class="update-body">My master's thesis "A Geometry-Aware Exponential Mechanism for Private Estimation" won the William A. Martin Thesis Award.</div>
           </li>
           <li data-categories="research">
             <time class="update-date" datetime="2026-06" aria-label="06/2026">
@@ -120,7 +120,7 @@
           </li>
         </ul>
         <div class="news-actions">
-          <button class="news-toggle" type="button" aria-expanded="false" aria-controls="news-list" aria-label="Show more updates">
+          <button class="news-toggle" hidden type="button" aria-expanded="false" aria-controls="news-list" aria-label="Show more updates">
             <i class="news-toggle-icon fas fa-chevron-down" aria-hidden="true"></i>
           </button>
         </div>
@@ -149,7 +149,6 @@
               My research interests are in designing efficient algorithms for problems in areas such as worst case approximation and robust statistics. 
               I'm particularly interested in the power of semidefinite programming and the sum-of-squares hierarchy. 
             </p>
-            </iframe>
           </td>
         </tr>
       </tbody>
@@ -157,7 +156,7 @@
     <h3 id="papers">
         <i
           class="fa fa-solid fa-book"
-          aria-label="Google Scholar"
+          aria-label="publications"
         ></i>
          publications</h3>
     <div class="paper" id="cert-near-opt">
@@ -175,7 +174,7 @@
       </div>
     </div>
     <div class="paper" id="bss-simple">
-      <b>A Simple Algorithm for Best Seperable State</b><br>
+      <b>A Simple Algorithm for Best Separable State</b><br>
       <div>
         <small>
           with 
@@ -235,7 +234,6 @@
         <div class="paper-links">[ <a href="https://arxiv.org/abs/2411.12438">arXiv</a> ]</div>
       </div>
     </div>
-    </iframe>
     <div class="paper" id="emv-additive">
       <b>Additive Approximation Schemes for Low-Dimensional Embeddings</b><br>
       <div>
@@ -251,7 +249,6 @@
         <div class="paper-links">[ <a href="https://arxiv.org/abs/2509.09652">arXiv</a> ]</div>
       </div>
     </div>
-    </iframe>
     <div class="paper" id="private-regression">
       <b>Sample-Optimal Private Regression in Polynomial Time</b><br>
       <div>
@@ -268,7 +265,6 @@
         <div class="paper-links">[ <a href="https://arxiv.org/abs/2503.24321">arXiv</a> ]</div>
       </div>
     </div>
-    </iframe>
   </section>
 
   <br>
@@ -279,36 +275,42 @@
         teaching
       </div>
     </h2>
-    <table>
-      <colgroup>
-        <col span="1" style="width: 100%" />
-        <col span="1" style="width: 0%" />
-      </colgroup>
-      <tbody>
-        <tr>
-          <td>
-            <ul>
-              <li>
-                Spring 2025 @ MIT — Introduction to Algorithms (Teaching Assistant)
-              </li>
-              <li>
-                Fall 2022 - Spring 2023 @ CMU — <a href="https://www.cs251.com/index.html">Great Theoretical Ideas in Computer Science</a> (Head Teaching Assistant)
-              </li>
-              <li>
-                Fall 2020 - Spring 2022 @ CMU — <a href="https://www.cs251.com/index.html">Great Theoretical Ideas in Computer Science</a> (Teaching Assistant)
-              </li>
-              <li>
-                Spring 2020 @ CMU — Principles of Imperative Programming (Teaching Assistant)
-              </li>
-            </ul>
-            <p>
-              I am honored to receive the <a href="https://www.cs.cmu.edu/~scsfacts/perlis.html">2023 Alan J. Perlis Undergraduate Student Teaching Award</a>
-              for my work as an undergraduate teaching assistant at CMU. 
-            </p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="teaching-content">
+      <ul class="teaching-list">
+        <li>
+          <span class="teaching-date">Spring 2025</span>
+          <div>
+            <span class="teaching-title">Introduction to Algorithms</span> <span class="teaching-separator" aria-hidden="true">·</span> MIT
+            <div>Teaching Assistant</div>
+          </div>
+        </li>
+        <li>
+          <span class="teaching-date">Fall 2022 — Spring 2023</span>
+          <div>
+            <span class="teaching-title"><a href="https://www.cs251.com/index.html">Great Ideas in Theoretical Computer Science</a></span> <span class="teaching-separator" aria-hidden="true">·</span> CMU
+            <div>Head Teaching Assistant</div>
+          </div>
+        </li>
+        <li>
+          <span class="teaching-date">Fall 2020 — Spring 2022</span>
+          <div>
+            <span class="teaching-title"><a href="https://www.cs251.com/index.html">Great Ideas in Theoretical Computer Science</a></span> <span class="teaching-separator" aria-hidden="true">·</span> CMU
+            <div>Teaching Assistant</div>
+          </div>
+        </li>
+        <li>
+          <span class="teaching-date">Spring 2020</span>
+          <div>
+            <span class="teaching-title">Principles of Imperative Computation</span> <span class="teaching-separator" aria-hidden="true">·</span> CMU
+            <div>Teaching Assistant</div>
+          </div>
+        </li>
+      </ul>
+      <p>
+        I am honored to receive the <a href="https://www.cs.cmu.edu/~scsfacts/perlis.html">2023 Alan J. Perlis Undergraduate Student Teaching Award</a>
+        for my work as an undergraduate teaching assistant at CMU.
+      </p>
+    </div>
   </section>
   <br>
 
@@ -358,7 +360,6 @@
   </section>
 
   <!-- script -->
-  <script src="script.js"></script>
   <!-- analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6D00T1PW16"></script>
   <script>
