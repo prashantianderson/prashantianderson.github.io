@@ -25,10 +25,10 @@
     href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Courier+Prime&family=Lora:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap;https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
+  <script src="news.js"></script>
 </head>
 
 <body>
-
   <!-- header -->
   <section>
     <div id="title">
@@ -76,8 +76,6 @@
               <a href="https://www.csail.mit.edu/">MIT CSAIL</a> advised by
               <a href="https://www.samuelbhopkins.com/">Sam Hopkins</a>.
               My research interests are in algorithm design, particularly from the lens of convex programming.
-            </p>
-            <p>
               Before starting my PhD I earned my BS in Computer Science from
               <a href="https://www.cs.cmu.edu/">CMU</a>, where I worked with
               <a href="https://www.cs.princeton.edu/~kothari/">Pravesh Kothari</a>.  
@@ -95,6 +93,36 @@
 
   <br>
 
+  <section id="news" class="section news" aria-label="News">
+    <h2><div class="highlight">news</div></h2>
+    <div class="grid">
+      <div class="span-1"></div>
+      <div class="span-10">
+        <ul id="news-list" class="updates-list" data-collapsed-count="3">
+          <li data-categories="research">
+            <time class="update-date" datetime="2026-06" aria-label="06/2026">
+                  06.26
+            </time>
+              <div class="update-body">My masters thesis "A Geometry-Aware Exponential Mechanism for Private Estimation" won the William A. Martin Thesis Award.</div>
+          </li>
+          <li data-categories="research">
+            <time class="update-date" datetime="2026-06" aria-label="06/2026">
+                  06.26
+            </time>
+              <div class="update-body">During Summer 2026 I'll be an intern at TTIC and Northwestern hosted by <a href="https://home.ttic.edu/~madhurt/">Madhur Tulsiani</a>, <a href="https://sidhanthm.com/">Sidhanth Mohanty</a>, and <a href="https://jeffxsc.github.io/">Jeff Xu</a>.</div>
+          </li>
+        </ul>
+        <div class="news-actions">
+          <button class="news-toggle" type="button" aria-expanded="false" aria-controls="news-list" aria-label="Show more updates">
+            <i class="news-toggle-icon fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
   <!-- papers -->
   <section>
     <h2>
@@ -125,19 +153,32 @@
           aria-label="Google Scholar"
         ></i>
          publications</h3>
-    <div class="paper" id="lra-ptas">
-      <b>Entrywise Low-Rank Approximation and Matrix p→q Norms via Global Correlation Rounding </b><br>
+    <div class="paper" id="cert-near-opt">
+      <b>Certifiable Near-Optimality: A Simple Framework for Unifying Search and Refutation for (Semi)random CSPs</b><br>
       <div>
         <small>
           with 
-          <a href="https://www.aineshbakshi.com/">Ainesh Bakshi</a>, and
-          <a href="https://www.samuelbhopkins.com/">Samuel B. Hopkins</a>.
+          <a href="https://www.math.ias.edu/~pmanohar/">Peter Manohar</a> and <a href="https://jeffxsc.github.io/">Jeff Xu</a>.
           <br>
         </small>
       </div>
       <div class="paper-meta">
         <span class="conference-bubble preprint">Preprint</span>
-        <div class="paper-links">[ <a href="https://arxiv.org/abs/2604.22699">arXiv</a> ]</div>
+        <div class="paper-links">[ <a href="https://arxiv.org/abs/2609.38367">arXiv</a> ]</div>
+      </div>
+    </div>
+    <div class="paper" id="bss-simple">
+      <b>A Simple Algorithm for Best Seperable State</b><br>
+      <div>
+        <small>
+          with 
+          <a href="https://www.samuelbhopkins.com/">Samuel B. Hopkins</a> and <a href="https://amitrajaraman.github.io/">Amit Rajaraman</a>.
+          <br>
+        </small>
+      </div>
+      <div class="paper-meta">
+        <span class="conference-bubble preprint">Preprint</span>
+        <div class="paper-links">[ <a href="https://arxiv.org/abs/2608.10147">arXiv</a> ]</div>
       </div>
     </div>
     <div class="paper" id="fast-maxcut-low-threshold">
@@ -153,6 +194,21 @@
       <div class="paper-meta">
         <span class="conference-bubble preprint">Preprint</span>
         <div class="paper-links">[ <a href="https://www.arxiv.org/abs/2511.11499">arXiv</a> ]</div>
+      </div>
+    </div>
+    <div class="paper" id="lra-ptas">
+      <b>Entrywise Low-Rank Approximation and Matrix p→q Norms via Global Correlation Rounding </b><br>
+      <div>
+        <small>
+          with 
+          <a href="https://www.aineshbakshi.com/">Ainesh Bakshi</a> and
+          <a href="https://www.samuelbhopkins.com/">Samuel B. Hopkins</a>.
+          <br>
+        </small>
+      </div>
+      <div class="paper-meta">
+        <span class="conference-bubble">SODA 2027</span>
+        <div class="paper-links">[ <a href="https://arxiv.org/abs/2604.22699">arXiv</a> ]</div>
       </div>
     </div>
     <div class="paper" id="gmm-clustering">
@@ -178,7 +234,7 @@
       <div>
         <small>
           with 
-          <a href="https://www.aineshbakshi.com/">Ainesh Bakshi</a>, and
+          <a href="https://www.aineshbakshi.com/">Ainesh Bakshi</a> and
           <a href="https://www.samuelbhopkins.com/">Samuel B. Hopkins</a>. 
           <br>
         </small>
@@ -290,7 +346,7 @@
   <!-- footer -->
   <section>
     <h4>
-      Updated June 2026.
+      Updated August 2026.
     </h4>
   </section>
 

@@ -4,7 +4,7 @@ body {
   color: #444;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
+  line-height: 1.5;
   font-size: 16px;
 }
 
@@ -78,6 +78,7 @@ ul {
 
 li {
   margin: 2px 0;
+  margin-bottom: 3px;
 }
 
 h1 {
@@ -418,4 +419,112 @@ hr {
 .conference-bubble.preprint {
   background-color: transparent;
   border: 1px solid #e5e5e5;
+}
+
+/* ==========================================================================
+   Updates Section
+   ========================================================================== */
+.updates-list {
+  --updates-date-column: 80px;
+  --updates-column-gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.updates-list li {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: var(--updates-date-column) minmax(0, var(--text-measure));
+  column-gap: var(--updates-column-gap);
+  align-items: start;
+  font-size: var(--font-size-base);
+  color: var(--muted);
+}
+
+.teaching-load {
+  display: inline-block;
+  margin-left: 0.35em;
+  color: var(--muted-faint);
+  font-size: 0.84em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.updates-list li.update-highlighted {
+  color: var(--fg);
+}
+
+.updates-list li.update-highlighted .update-date {
+  color: rgba(18, 47, 59, 0.84);
+}
+
+.update-body {
+  min-width: 0;
+}
+
+.update-date {
+  color: rgba(10, 10, 10, 0.58);
+  font-size: 13px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: fit-content;
+  min-width: 56px;
+  margin: 1px 0 0;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.update-date .flag {
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+/* Place non-date content in the second column */
+.updates-list li > :not(.update-date) {
+  grid-column: 2;
+}
+
+
+/* News expand/collapse */
+.news-actions {
+  margin-top: var(--spacing-md);
+  display: flex;
+  justify-content: center;
+}
+
+.news-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  color: rgba(10, 10, 10, 0.82);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color var(--transition), opacity var(--transition), transform var(--transition);
+}
+
+.news-toggle-icon {
+  font-size: inherit;
+  line-height: 1;
 }
