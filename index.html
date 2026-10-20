@@ -13,6 +13,7 @@
     gtag('config', 'G-HXHF82KC43');
   </script>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="google-site-verification" content="HTdgjOMrEDJmjtSxk4tzKgDTuM5wWqT_BHWwTx14NvA">
   <title>Prashanti Anderson</title>
@@ -22,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/x-icon" href="/figs/favicon.ico">
   <link
-    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Courier+Prime&family=Lora:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap;https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&amp;family=Courier+Prime:wght@400;700&amp;family=DM+Sans:wght@400;500;700&amp;family=Source+Serif+4:wght@300;400;500;700&amp;display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/3cb16648c5.js" crossorigin="anonymous"></script>
   <script src="news.js"></script>
@@ -30,40 +31,21 @@
 
 <body>
   <!-- header -->
-  <section>
+  <section class="site-header">
     <div id="title">
-      <h1>prashanti anderson</h1>
+      <h1>Prashanti Anderson</h1>
     </div>
-    <div class="socials">
-      <div>
-        <a
-          class="icon"
-          href="https://scholar.google.com/citations?user=RQg7790AAAAJ&hl=en"
-        >
-          <i
-            class="fa fa-solid fa-graduation-cap"
-            aria-label="Google Scholar"
-          ></i>
-        </a>
-        &nbsp;
-        <a
-          class="icon"
-          href="https://www.linkedin.com/in/prashanti-anderson/"
-        >
-          <i
-            class="fa fa-brands fa-linkedin" aria-label="LinkedIn"></i>
-        </a>
-        &nbsp;
-        <a class="icon" href="docs/cv.pdf">
-            <i class="fa fa-solid fa-file" aria-label="CV"></i>
-        </a>
-      </div>
-    </div>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#news">news</a>
+      <a href="#research">research</a>
+      <a href="#teaching">teaching</a>
+      <a href="#misc">misc</a>
+    </nav>
   </section>
 
   <!-- intro -->
   <section>
-    <table>
+    <table class="intro-table">
       <colgroup>
         <col span="1" style="width: 60%;">
         <col span="1" style="width: 40%;">
@@ -82,6 +64,32 @@
             </p>
             <p>
               If you'd like to chat you can reach me at <strong>paanders[at]mit[dot]edu</strong>.
+            </p>
+            <div class="socials">
+              <div>
+                <a
+                  class="icon"
+                  href="https://scholar.google.com/citations?user=RQg7790AAAAJ&hl=en"
+                >
+                  <i
+                    class="fa fa-solid fa-graduation-cap"
+                    aria-label="Google Scholar"
+                  ></i>
+                </a>
+                <span aria-hidden="true">&middot;</span>
+                <a
+                  class="icon"
+                  href="https://www.linkedin.com/in/prashanti-anderson/"
+                >
+                  <i
+                    class="fa fa-brands fa-linkedin" aria-label="LinkedIn"></i>
+                </a>
+                <span aria-hidden="true">&middot;</span>
+                <a class="icon" href="docs/cv.pdf">
+                    <i class="fa fa-solid fa-file" aria-label="CV"></i>
+                </a>
+              </div>
+            </div>
           </td>
           <td>
             <img src="figs/me_circle.png">
@@ -124,7 +132,7 @@
 
   <br>
   <!-- papers -->
-  <section>
+  <section id="research">
     <h2>
       <div class="highlight">
         research
@@ -266,7 +274,7 @@
 
   <br>
   <!-- teaching -->
-  <section>
+  <section id="teaching">
     <h2>
       <div class="highlight">
         teaching
@@ -306,7 +314,7 @@
   <br>
 
   <!-- misc -->
-  <section>
+  <section id="misc">
     <h2>
       <div class="highlight">
         misc
@@ -345,8 +353,8 @@
 
   <!-- footer -->
   <section>
-    <h4>
-      Updated August 2026.
+    <h4 class="footer-update">
+      Updated October 2026.
     </h4>
   </section>
 
