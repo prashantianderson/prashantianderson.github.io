@@ -115,7 +115,7 @@ a {
 
 a:hover,
 .socials a:hover {
-  color: #80452E;
+  color: #66574F;
   transition: all 0.3s ease;
 }
 
@@ -308,7 +308,7 @@ hr {
 }
 
 .show:hover {
-  color: #80452E;
+  color: #66574F;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -564,7 +564,7 @@ hr {
 }
 
 .news-toggle:hover {
-  color: #80452E;
+  color: #66574F;
 }
 
 .news-toggle-icon {
